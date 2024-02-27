@@ -1,0 +1,129 @@
+.from {
+    padding: 80px 0 100px;
+}
+
+.from__name {
+    font-size: 40px;
+    line-height: 48px;
+    color: $primaryColor;
+}
+
+.from__title {
+    padding: 10px 0 80px;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.from__box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .from__box__item {
+        max-width: 450px;
+        padding: 20px;
+        background: $secondaryColor;
+        box-shadow: 0 0 4px $primaryColor;
+        display: flex;
+        gap: 15px;
+        text-align: start;
+
+        &__right__title {
+            font-size: 20px;
+            line-height: 24px;
+            color: $primaryColor;
+        }
+
+        &__right__desc {
+            max-width: 230px;
+            padding-top: 13px;
+            font-size: 14px;
+            line-height: 20px;
+            color: $primaryColor;
+            opacity: 0.5;
+        }
+    }
+
+    .box__item1 {
+        position: absolute;
+        top: 80px;
+        left: -100px;
+    }
+
+    .box__item2 {
+        position: absolute;
+        top: -40px;
+        right: 50px;
+    }
+
+    .box__item3 {
+        position: absolute;
+        bottom: -20px;
+        right: -50px;
+    }
+}
+
+@media (max-width:1070px) {
+    .from__box {
+        position: static;
+
+        .from__box__item {
+            position: static;
+            margin: 0 auto;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media (max-width:880px) {
+    .from__name {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .from__title {
+        padding: 10px 0 50px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    .from__name {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .from__box__item {
+        padding: 10px;
+    }
+
+    .from__title {
+        padding: 10px 0 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .from__box__item__right__title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .from__box__item__right__desc {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .from {
+        padding-bottom: 10px;
+    }
+}
